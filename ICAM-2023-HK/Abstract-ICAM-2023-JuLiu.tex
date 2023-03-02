@@ -1,0 +1,53 @@
+%%%%%%  TALK ABSTRACT, ICAM 2020, LATEX SOURCE FILE (version 1.1) %%%%%%
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\begin{document}
+%% PLEASE FILL THE NAME(S) OF AUTHOR(S) HERE. IF THERE ARE MORE THAN ONE AUTHOR,
+%% PLEASE MARK THE SPEAKER BY PUTTING "${}^*$" RIGHT BEHIND HIS/HER NAME.
+%% EXAMPLE:
+%% \newcommand\nameLBJ{First Author, Second Author${}^*$,
+%% Third Author}
+\newcommand\AuthorNameLBJ{Ju Liu }
+
+%% PLEASE FILL THE SPEAKER'S AFFILIATION HERE
+%% EXAMPLE: \def\affiliationLBJ{Department of Mathematics, City University of Hong Kong, Hong Kong}
+\newcommand\affiliationLBJ{Department of Mechanics and Aerospace Engineering, Southern University of Science and Technology, Shenzhen}
+
+%% PLEASE FILL THE SPEAKER'S EMAIL ADDRESS HERE
+\newcommand\emailLBJ{jliu36@sustech.edu.cn, liujuy@gmail.com}
+
+%% PLEASE FILL THE TITLE OF YOUR TALK HERE
+\newcommand\titleOfTalkLBJ{A revisit of a family of finite viscoelasticity models}
+%% PLEASE FILL THE ABSTRACT OF YOUR TALK HERE
+\newcommand\abstractOfTalkLBJ{The viscoelasticity theory proposed in [1,2] has gained popularity over the years because it is amenable to finite element implementation and convenient in accounting for material anisotropy. Due to the linear nature, that modeling approach inherently assumes a small deviation from thermodynamic equilibrium. Yet, under physiological settings, this assumption can be regarded valid and thereby inspires various subsequent works in biomechanics. A more critical issue is related to its lack of thermodynamic foundations. Indeed, the original model was constructed in a rather heuristic way. Recently, a finite-time blow-up solution has been identified [3], signifying an alerting issue concerning its theoretical root.
+
+In this talk, I will address the issue by providing a complete thermomechanical theory for the aforementioned models. The derivation elucidates the origin of the evolution equations of that model, with minor differences in the right-hand side terms. It is also shown that the conjugate variable and non-equilibrium stress should be differentiated, an issue that has been ignored in prior works. A classical model based on the identical polymer chain assumption is found to have non-vanishing viscous stresses in the equilibrium limit, which is counter-intuitive in the physical sense. Because of that, we discuss the relaxation property of the non-equilibrium stress in the thermodynamic equilibrium limit and its implication on the form of free energy. A modified version of the identical polymer chain model is then proposed.
+
+Based on the consistent modeling framework, a provably energy stable numerical scheme is constructed for incompressible viscohyperelasticity using inf-sup stable elements. In particular, we adopt a suite of smooth generalization of the Taylor-Hood element based on Non-Uniform Rational B-Splines (NURBS) for spatial discretization \cite{Liu19}. The temporal discretization is performed via the generalized-$\alpha$ scheme. We present a suite of numerical results to corroborate the proposed numerical properties, including the nonlinear stability, robustness under large deformation, and the stress accuracy resolved by the higher-order elements. Additionally, the pathological behavior of the original identical polymer chain model is numerically identified with an unbounded energy decaying. This again signifies the importance of demanding the vanishment of the non-equilibrium stress in the equilibrium limit.
+
+\vspace{2cm}
+
+\noindent [1] J.C. Simo. On a fully three-dimensional finite-strain viscoelastic damage model: formulation and computational aspects. {\em Computer Methods in Applied Mechanics and Engineering}, 60:153-173, 1987. 
+
+\noindent [2] J.S. Simo and T.J.R. Hughes. Computational Inelasticity. Springer Science \& Business Media, 2006.
+
+\noindent [3] S. Govindjee, T. Potter, and J. Wilkening. Dynamic stability of spinning viscoelastic cylinders at finite deformation. {\em International journal of solids and structures}, 51:3589-3603, 2014.
+ }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  THE CODE BELOW IS FOR LBJ USE ONLY. PLEASE DO NOT ALTER IT!               %%
+%%  THIS ENABLES OUR COMPUTER TO PROCESS THE FILES AUTOMATICALLY IN BATCH.    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent\textbf{\large\ignorespaces\titleOfTalkLBJ}$\,$\\*
+\noindent\textsc{\ignorespaces\AuthorNameLBJ}$\,$\\*
+\noindent\ignorespaces\affiliationLBJ$\,$\\*
+\noindent\textit{Email: }\texttt{\ignorespaces\emailLBJ}$\,$\\*
+\noindent\rule{\textwidth}{0.15mm}$\,$\\*
+ \abstractOfTalkLBJ
+\par
+\end{document}
+
+%%%%%%%%%%%end of abstract%%%%%%%%%%%
